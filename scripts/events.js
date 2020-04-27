@@ -52,22 +52,21 @@ function setEventTypes(eventTypes) {
 
 function setTypeSelection(type) {
     console.log(type)
-    const typeOption = document.createElement("option");
+    const typeOption = document.createElement("a");
     typeOption.innerHTML = type.name;
-    typeOption.value = type.id;
-    document.querySelector(".type-selection").appendChild(typeOption);
-}
-
-function eventFilter() {
-    //clear the current displayed events:
-    document.querySelector(".event-grid-wrapper").innerHTML = "";
-
-    var IDOfType = document.querySelector(".type-selection").value
-    if (IDOfType == "none") {
-        getData()
-    } else {
-        fetch("http://multidani.eu/shop/wp-json/wp/v2/event?eventtype=" + IDOfType)
-            .then(res => res.json())
-            .then(handleData)
+    //ADDING A FUNCTION THAT DISPLAYS EVENTS OF CONCRETE TYPE WHEN CLICKED ON
+    typeOption.onclick = function () {
+        //clear the current displayed events:
+        document.querySelector(".event-grid-wrapper").innerHTML = "";
+        if (type.name == "All") {
+            getData()
+        } else {
+            fetch("http://multidani.eu/shop/wp-json/wp/v2/event?eventtype=" + type.id)
+                .then(res => res.json())
+                .then(handleData)
+        }
     }
+
+    document.querySelector(".dropdown-content").appendChild(typeOption);
 }
+
