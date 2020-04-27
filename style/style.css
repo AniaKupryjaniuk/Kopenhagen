@@ -40,7 +40,7 @@ h2 {
     display: inline-block;
 }
 
-.dropdown-content {
+#dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -51,17 +51,17 @@ h2 {
 
 }
 
-.dropdown-content a {
+#dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+#dropdown-content a:hover {
     background-color: #f1f1f1
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover #dropdown-content {
     display: block;
 }
