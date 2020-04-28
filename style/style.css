@@ -6,9 +6,9 @@
 }
 
 body {
-    background-color: #F2EFE9;
+    background-color: #323F49;
     font-family: Open Sans;
-    color: #323F49;
+    color: #F2EFE9;
 }
 
 h1 {
@@ -65,18 +65,18 @@ h2 {
 .dropdown:hover #dropdown-content {
     display: block;
 }
+
 /**HAMBURGER MENU**/
 header {
   padding: 2em;
 }
 
-header .logo {
-  color: black;
-  font-weight: bold;
+.logo {
+ width: 8%;
 }
 
 header .menu-btn {
-  width: 18px;
+  width: 30px;
   float: right;
   cursor: pointer;
 }
@@ -85,8 +85,8 @@ section {
   padding: 4em;
 }
 
-section h1 {
-  font-size: 4em;
+section h2 {
+  font-size: 2em;
   margin: 1em auto;
   width: 70%;
   text-transform: uppercase;
@@ -122,24 +122,21 @@ nav ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
   padding: 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
   width: 80%;
 }
 
 nav ul a {
   color: white;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1.4em;
 }
 
-nav ul span {
+nav ul h2 {
   color: gray;
   display: block;
-  font-size: .75em;
-  margin-top: 20px;
+  font-size: 2em;
 }
 
 nav ul li {
