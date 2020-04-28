@@ -11,21 +11,43 @@ body {
     color: #F2EFE9;
 
 }
-h1 {
-    color: #6C9C99;
+/*
+.triangle {
+    position: absolute;
     background: white;
-    margin: 10% 10% 0 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+*/
+
+.container {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    text-align: right;
+}
+
+.container h1 {
+    margin-left: 20%;
+    color: #6C9C99;
+    grid-column: 3;
+    grid-row: 1;
+    background: white;
     padding: 10px;
-    display: block;
-    float: right;
 }
-
-main p {
-    grid-auto-columns: 3;
-    display: block;
-    float: right;
+.container p {
+    grid-column: 3;
+    grid-row: 2;
 }
-
+.container a {
+    grid-column: 3;
+    grid-row: 3;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}
 h2 {
     font-size: 40px;
 }
@@ -201,11 +223,6 @@ nav ul li {
     background: #F2EFE9;
     position: relative;
     /*    clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);*/
-    /*
-  z-index: 10;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-  margin-bottom: -10vw;
-*/
 }
 
 
