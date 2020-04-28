@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #F2EFE9;
+    background-color: #334049;
     font-family: Open Sans;
-    color: #323F49;
+    color: #f2efea;
 }
 
 h1 {
-    color: #6C9C99
+    color: #6C9C99;
 }
 
 h2 {
@@ -64,4 +64,21 @@ h2 {
 
 .dropdown:hover #dropdown-content {
     display: block;
+}
+
+footer{
+
+}
+
+h3{
+    text-align:  center;
+}
+.links{
+    text-align:  center;
+    word-spacing: 30px;
+    padding-top: 20px;
+
+}
+a{
+    text-decoration: none;
 }
