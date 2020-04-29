@@ -51,7 +51,14 @@ body {
 h2 {
     font-size: 40px;
 }
+.article_image {
+    width: 40%;
+    margin: 0 10% 0;
+}
+.article-container p{
+    margin: 2% 10% 0;
 
+}
 .selection-container {
     text-align: center;
     padding-bottom: 50px;
