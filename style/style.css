@@ -297,3 +297,23 @@ nav ul li {
         opacity: 1;
     }
 }
+footer{
+margin: 70px 50px;;
+border-top: 0.2px solid #f2efea;
+opacity: 2px;
+}
+
+h3{
+    padding-top: 15px;
+    text-align:  center;
+    font-family: Open Sans;
+}
+.links{
+    text-align:  center;
+    word-spacing: 30px;
+    padding-top: 15px;
+
+}
+a{
+    text-decoration: none;
+}
