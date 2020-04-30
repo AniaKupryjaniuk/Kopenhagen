@@ -1,4 +1,4 @@
-.event-grid-wrapper {
+footer2.event-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -99,22 +99,13 @@ h2 {
     display: block;
 }
 
-.search-results a {
-    font-size: 10px;
-    color: white;
-}
-.search-results p {
-    font-size: 10px;
-}
-
-
 /**HAMBURGER MENU**/
 header {
     padding: 2em;
 }
 
 .logo {
-    width: 4.5%;
+    width: 8%;
 }
 
 header .menu-btn {
@@ -187,7 +178,6 @@ nav ul li {
     display: block;
     -webkit-animation: slide-menu 1s ease-in forwards;
     animation: slide-menu 1s ease-in forwards;
-    z-index: 2;
 }
 
 .show-menu .close-button {
@@ -307,6 +297,7 @@ nav ul li {
         opacity: 1;
     }
 }
+
 footer{
 margin: 70px 50px;;
 border-top: 0.2px solid #f2efea;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#6D9C99;stroke-width:9;stroke-miterlimit:10;}
+	.st3{opacity:0.3004;fill:url(#path1950_1_);enable-background:new    ;}
+	.st4{fill:#6D9C99;}
+	.st5{fill:none;stroke:#6D9C99;stroke-width:10;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#6D9C99;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="svg2" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.47 r22583" sodipodi:docname="facebook.svg" sodipodi:version="0.32" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" class="st0">
+	<title  id="title2910">facebook web</title>
+
+		<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer1" inkscape:cx="204.60201" inkscape:cy="64.459739" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="762" inkscape:window-maximized="0" inkscape:window-width="682" inkscape:window-x="1" inkscape:window-y="193" inkscape:zoom="0.98994949" pagecolor="#ffffff" showgrid="false">
+		</sodipodi:namedview>
+	<g id="layer1" transform="translate(-373.642,-318.344)" inkscape:groupmode="layer" inkscape:label="Layer 1" class="st1">
+
+			<path id="rect1942" inkscape:export-filename="C:\Documents and Settings\Molumen\Desktop\path3511111.png" inkscape:export-xdpi="7.7063322" inkscape:export-ydpi="7.7063322" class="st2" d="
+			M584.2,328.3h-165c-19.6,0-35.5,15.9-35.5,35.5v165c0,19.6,15.9,35.5,35.5,35.5h165c19.6,0,35.5-15.9,35.5-35.5v-165
+			C619.6,344.2,603.8,328.3,584.2,328.3z"/>
+
+			<linearGradient id="path1950_1_" gradientUnits="userSpaceOnUse" x1="-1219.3518" y1="828.6194" x2="-1271.0483" y2="979.3083" gradientTransform="matrix(-0.5915 0 0 0.5915 -277.3994 -195.7986)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+
+			<path id="path1950" inkscape:export-filename="C:\Documents and Settings\Molumen\Desktop\path3511111.png" inkscape:export-xdpi="7.7063322" inkscape:export-ydpi="7.7063322" sodipodi:nodetypes="ccccsssc" class="st3" d="
+			M557.3,338.4H446c-29.5,0-53.2,23.9-53.2,53.6v108.6c1,23.2,4.6,8.5,11.6-17.1c8.1-29.8,34.5-55.9,66.7-75.5
+			c24.6-14.9,52.1-24.4,102.1-25.4C601.6,382.2,599.1,345.8,557.3,338.4z"/>
+		<g id="Layer_3" transform="matrix(1.7982054,0,0,1.8129643,376.63343,326.35613)">
+			<path id="path3336" class="st4" d="M93.4,117H72.2V65.8H61.6V48.1h10.6V37.5c0-14.4,6-23,22.9-23h14.1v17.7h-8.8
+				c-6.6,0-7,2.5-7,7.1v8.8h16l-1.9,17.7H93.4V117z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<g id="layer1_1_" inkscape:groupmode="layer" inkscape:label="Layer 1">
+		<path id="rect2248" class="st5" d="M34.8,10h186.3c13.7,0,24.8,14.2,24.8,31.5v173.1c0,17.3-11.2,31.5-24.8,31.5H34.8
+			C21.2,246,10,231.8,10,214.5V41.5C10,24.2,21.2,10,34.8,10z"/>
+		<path id="path4000" sodipodi:nodetypes="cccc" class="st6" d="M20.3,20.9l94.2,108.6c7.4,9.4,12.8,9.4,20.2,0L235.7,17.8"/>
+		<path class="st6" d="M102.6,117.2c-22,30.3-42.1,61.8-63.6,92.4c-6.1,8.7-12.3,17.3-18.7,25.7"/>
+		<path class="st6" d="M235.7,239.2c-24.3-30.8-45.7-63.7-68.4-95.7c-6.6-9.3-13.4-18.6-20.3-27.7"/>
+	</g>
+</g>
+</svg>
