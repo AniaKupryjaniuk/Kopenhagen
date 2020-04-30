@@ -99,6 +99,15 @@ h2 {
     display: block;
 }
 
+.search-results a {
+    font-size: 10px;
+    color: white;
+}
+.search-results p {
+    font-size: 10px;
+}
+
+
 /**HAMBURGER MENU**/
 header {
     padding: 2em;
@@ -178,6 +187,7 @@ nav ul li {
     display: block;
     -webkit-animation: slide-menu 1s ease-in forwards;
     animation: slide-menu 1s ease-in forwards;
+    z-index: 2;
 }
 
 .show-menu .close-button {

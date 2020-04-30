@@ -6,10 +6,13 @@
 // -------------------------------------------
 
 window.addEventListener('DOMContentLoaded', init);
+const urlParams = new URLSearchParams(window.location.search);
 
 const eventsLink = "http://multidani.eu/shop/wp-json/wp/v2/event"
 const eventTypesLink = "http://multidani.eu/shop/wp-json/wp/v2/eventtype"
 const eventLocationLink = "http://multidani.eu/shop/wp-json/wp/v2/eventlocation"
+
+var searchterm = urlParams.get("searchterm");
 
 var typeID = -1;
 var locID = -1;
@@ -17,12 +20,26 @@ var locID = -1;
 var allEvents = [];
 
 function init() {
-    getData()
+    if (searchterm) {
+        getSearch()
+    } else {
+        getData()
+    }
     getEventTypes()
     getEventLocations()
 }
 
 //------------------Display all events----------------------
+
+function getSearch() {
+    fetch("http://multidani.eu/shop/wp-json/wp/v2/event?search=" + searchterm + "&_embed")
+        .then(res => res.json())
+        .then(function (data) {
+            allEvents = data;
+            handleData(data)
+            pathTaken()
+        })
+}
 
 function getData() {
     fetch(eventsLink)
@@ -41,9 +58,6 @@ function showEvent(event) {
     const template = document.querySelector(".event-template").content;
     const copy = template.cloneNode(true);
     console.log(event);
-//    const tmp = document.createElement("div");
-//    tmp.innerHTML = event.location + " - " + event._type;
-   // copy.appendChild(tmp);
     copy.querySelector(".event-image").src = event.image.guid;
     copy.querySelector(".img-link").href = "singleEvent.html?event_id=" + event.id;
 
@@ -75,7 +89,6 @@ function setTypeSelection(type) {
             filter();
         } else {
             typeID = type.id;
-            //filterByType(type.id);
             filter();
         }
     }
@@ -106,7 +119,6 @@ function setLocationSelection(location) {
             locID = -1;
             filter();
         } else {
-            //filterByLocation(location.id);
             locID = location.id;
             filter();
         }
@@ -118,27 +130,38 @@ function setLocationSelection(location) {
 //----------------------------Filters-----------------------------
 
 function filter() {
-
+    searchterm = false;
     var filtered = []
 
-    if(typeID == -1 && locID == -1) {
+    if (typeID == -1 && locID == -1) {
         handleData(allEvents)
-    }
-    else if(typeID == -1 && locID != -1) {
+    } else if (typeID == -1 && locID != -1) {
         //filter only by location
         filtered = allEvents.filter(event => event.eventlocation == locID);
-    }
-    else if(typeID != -1 && locID == -1) {
+    } else if (typeID != -1 && locID == -1) {
         //filter only by type
         filtered = allEvents.filter(event => event.eventtype == typeID);
 
-    }
-    else if(typeID != -1 && locID != -1) {
+    } else if (typeID != -1 && locID != -1) {
         //filter by both
         filtered = allEvents.filter(event => event.eventtype == typeID)
-                            .filter(event => event.eventlocation == locID);
+            .filter(event => event.eventlocation == locID);
 
     }
 
     handleData(filtered);
+}
+//------------------------Path Taken-----------------------------
+function pathTaken() {
+    const div = document.createElement("DIV");
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+
+    p.innerHTML = "Showing results of: " + searchterm + ". ";
+    a.innerHTML = "Filter from all events";
+    a.href = "events.html";
+
+    div.appendChild(p).appendChild(a);
+    div.classList.add("search-results");
+    document.querySelector(".selection-container").appendChild(div);
 }
