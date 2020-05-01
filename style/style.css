@@ -67,6 +67,7 @@ body {
     grid-row: 1;
     background: white;
     padding: 10px;
+    text-align: center;
 }
 
 .container p {
@@ -153,8 +154,8 @@ header {
 }
 
 .logo {
-    width: 130%;
     height: auto;
+    width: 130%;
 
 }
 
@@ -325,6 +326,30 @@ input:-moz-placeholder {
 input::-webkit-input-placeholder {
     color: #999;
 }
+
+
+@media only screen and (max-width: 600px) {
+ .logo {
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+
+}
+    input[type=search] {
+	width: 30px;
+}
+    input[type=search] {
+	font-size: 55%;
+}
+}
+
+@media only screen and (min-width: 600px) {
+ form{
+   margin-left: 650px;
+}
+}
+
+
 
 @-webkit-keyframes slide-menu {
     from {
