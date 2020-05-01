@@ -291,6 +291,12 @@ input:-moz-placeholder {
 input::-webkit-input-placeholder {
 	color: #999;
 }
+@media only screen and (min-width: 600px) {
+ form{
+   margin-left: 650px;
+}
+}
+
 
 @-webkit-keyframes slide-menu {
     from {
