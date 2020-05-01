@@ -1,10 +1,12 @@
 .event-grid-wrapper {
+margin: auto;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
     text-align: center;
 }
+
 img {
     width: 100%;
     height: auto;
@@ -18,14 +20,37 @@ body {
 
 }
 
-/*
-.triangle {
-    position: absolute;
-    background: white;
-    z-index: -1;
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
+.event {
+    display: grid;
+    overflow: hidden;
+    cursor: pointer;
 }
-*/
+
+.event:hover > .info {
+    transform: translateX(0);
+
+}
+
+.event > * {
+    position: relative;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+}
+
+.event section {
+    z-index: 10;
+    background-color: #1D252B;
+    display: grid;
+    place-content: center;
+    transform: translateX(100%);
+    transition: all 0.3s;
+}
+
+.event h3 {
+    text-transform: uppercase;
+    color: white;
+}
 
 .container {
     margin: 10%;
@@ -253,48 +278,52 @@ nav ul li {
 
 /** SEARCH BAR **/
 input {
-	outline: none;
+    outline: none;
 }
+
 input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-size: 100%;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-size: 100%;
 }
+
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
-	display: none;
+    display: none;
 }
 
 
 input[type=search] {
-	background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 7px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
+    background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 7px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
 
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
 
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
 }
-input[type=search]:focus {
-	width: 130px;
-	background-color: #fff;
 
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
 
 
 input:-moz-placeholder {
-	color: #999;
+    color: #999;
 }
+
 input::-webkit-input-placeholder {
-	color: #999;
+    color: #999;
 }
 
 @-webkit-keyframes slide-menu {
