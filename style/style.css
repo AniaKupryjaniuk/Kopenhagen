@@ -1,7 +1,8 @@
 .event-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
     text-align: center;
 }
 
