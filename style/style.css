@@ -37,6 +37,7 @@ body {
     grid-row: 1;
     background: white;
     padding: 10px;
+    text-align: center;
 }
 
 .container p {
