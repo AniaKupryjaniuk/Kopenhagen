@@ -1,15 +1,20 @@
 .event-grid-wrapper {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
 body {
     background-color: #323F49;
     font-family: Open Sans;
     color: #F2EFE9;
+    margin: 0;
 
 }
 
@@ -116,10 +121,10 @@ h2 {
 
 /**HAMBURGER MENU**/
 header {
-    padding: 2em;
     display: flex;
     justify-content: space-between;
-    padding-top: 0;
+    padding: 15px;
+    background-color: #1D252B;
 }
 
 .logo {
