@@ -117,10 +117,15 @@ h2 {
 /**HAMBURGER MENU**/
 header {
     padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
 }
 
 .logo {
-    width: 4.5%;
+    width: 130%;
+    height: auto;
+
 }
 
 header .menu-btn {
@@ -241,6 +246,51 @@ nav ul li {
     /*    clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);*/
 }
 
+/** SEARCH BAR **/
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+
+input[type=search] {
+	background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 7px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
 
 @-webkit-keyframes slide-menu {
     from {
