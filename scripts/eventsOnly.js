@@ -18,6 +18,7 @@ function showEvent(event) {
     console.log(event);
     copy.querySelector(".event-image").src = event.image.guid;
     copy.querySelector(".img-link").href = "singleEvent.html?event_id=" + event.id;
+    copy.querySelector("h3").textContent = event.title.rendered;
 
     document.querySelector(".event-grid-wrapper").appendChild(copy);
 }
