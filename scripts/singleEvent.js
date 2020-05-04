@@ -9,7 +9,6 @@ function getData() {
 }
 
 function showEvent(event) {
-    console.log(event)
     document.querySelector(".event_image").src = event.image.guid;
     document.querySelector(".title").innerHTML = event.title.rendered;
     document.querySelector(".location").innerHTML = "Location: " + event.location;

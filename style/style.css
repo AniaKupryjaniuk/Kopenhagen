@@ -150,7 +150,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: #1D252B;
+    background-color: #323F49;
 }
 
 .logo {
@@ -464,4 +464,15 @@ a {
     width: 40%;
     display: inline-block;
 
+}
+
+.socialicon{
+    width:50px;
+    height:50px;
+}
+
+.overlay_link {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
 }
