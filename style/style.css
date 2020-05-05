@@ -451,6 +451,13 @@ a {
     text-align: center;
 }
 
+.About {
+    text-align: center;
+}
+.about-logo{
+    width: 140px;
+}
+
 .wrapper {
     width: 80%;
 }
@@ -459,11 +466,24 @@ a {
     width: 40%;
     display: inline-block;
 }
+.left_box1 {
+    width: 40%;
+    display: inline-block;
+    margin-left: 16%;
+}
 
 .right_box {
     width: 40%;
     display: inline-block;
 
+}
+.right_box1 {
+    width: 40%;
+    display: inline-block;
+    margin-left:30px;
+}
+.title1{
+    padding-bottom: 20px;
 }
 
 .socialicon{
@@ -475,4 +495,7 @@ a {
     text-decoration: none;
     font-size: 30px;
     color: white;
+}
+.about_image{
+    padding-bottom: 80px;
 }
