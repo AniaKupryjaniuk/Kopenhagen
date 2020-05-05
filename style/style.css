@@ -51,7 +51,10 @@ body {
     color: #F2EFE9;
     font-size: 1.4em;
     font-weight: bold;
-    
+    background: #334049;   
+}
+.hero-text p {
+    background: #334049;
 }
 
 .event {
