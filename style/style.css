@@ -17,7 +17,41 @@ body {
     font-family: Open Sans;
     color: #F2EFE9;
     margin: 0;
+    overflow-x: hidden; 
+}
 
+.hero-image {
+    background-image: url("../images/heroimage.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 0 94%, 72% 0);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 90vw), 0 100%);
+}
+.hero-text {
+    text-align: right;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    max-width: 400px;
+    color: #F2EFE9;
+}
+
+.hero-text h1 {
+    color: #6C9C99;
+    background: #F2EFE9;
+    padding: 10px;   
+}
+
+.hero-text a {
+    text-decoration: none;
+    color: #F2EFE9;
+    font-size: 1.4em;
+    font-weight: bold;
+    
 }
 
 .event {
@@ -50,38 +84,6 @@ body {
 .event h3 {
     text-transform: uppercase;
     color: white;
-}
-
-.container {
-    margin: 10%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    text-align: right;
-}
-
-.container h1 {
-    margin-left: 20%;
-    color: #6C9C99;
-    grid-column: 3;
-    grid-row: 1;
-    background: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.container p {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.container a {
-    grid-column: 3;
-    grid-row: 3;
-    text-decoration: none;
-    color: white;
-    font-size: 1.4em;
-    font-weight: bold;
 }
 
 h2 {
