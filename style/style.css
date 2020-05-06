@@ -31,7 +31,6 @@ body {
     -webkit-clip-path: polygon(0 0, 0 94%, 72% 0);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 90vw), 0 100%);
 }
-
 .hero-text {
     text-align: right;
     position: absolute;
@@ -96,12 +95,13 @@ body {
 }
 
 h2 {
+    margin-top: 8%;
     font-size: 2em;
 }
 
 .selection-container {
     text-align: center;
-    padding-bottom: 1vh;
+    padding-bottom: 8%;
 }
 
 .dropbtn {
