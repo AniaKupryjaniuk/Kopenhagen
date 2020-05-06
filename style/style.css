@@ -1,5 +1,5 @@
 .event-grid-wrapper {
-margin: auto;
+    margin: auto;
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -17,7 +17,7 @@ body {
     font-family: Open Sans;
     color: #F2EFE9;
     margin: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .hero-image {
@@ -41,20 +41,24 @@ body {
 }
 
 .hero-text h1 {
-    color: #6C9C99;
-    background: #F2EFE9;
-    padding: 10px;   
+    color: #F2EFE9;
+    padding: 10px;
 }
 
 .hero-text a {
     text-decoration: none;
-    color: #F2EFE9;
+    color: #6C9C99;
+    background: #F2EFE9;
+    /*    color: #F2EFE9;*/
     font-size: 1.4em;
+    padding: 6px;
     font-weight: bold;
-    background: #334049;   
+    /*    background: #334049;   */
 }
+
 .hero-text p {
     background: #334049;
+    padding: 7px;
 }
 
 .event {
@@ -77,25 +81,27 @@ body {
 
 .event section {
     z-index: 10;
-    background-color: #1D252B;
+    background-color: #F2EFE9;
     display: grid;
     place-content: center;
     transform: translateX(100%);
     transition: all 0.3s;
 }
 
-.event h3 {
-    text-transform: uppercase;
-    color: white;
+.overlay_link {
+    text-decoration: none;
+    color: #323F49;
+    font-size: 1.4em;
 }
 
 h2 {
-    font-size: 40px;
+    margin-top: 8%;
+    font-size: 2em;
 }
 
 .selection-container {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 8%;
 }
 
 .dropbtn {
@@ -211,7 +217,7 @@ nav ul {
 }
 
 nav ul a {
-    color: grey;
+    color: #323F49;
     font-weight: lighter;
     display: block;
     font-size: 1.4em;
@@ -220,7 +226,7 @@ nav ul a {
 }
 
 nav ul h2 {
-    color: gray;
+    color: #323F49;
     margin: 0 0 10% 0;
     display: block;
     font-size: 2em;
@@ -232,14 +238,14 @@ nav ul li {
 
 .show-menu {
     display: block;
-    -webkit-animation: slide-menu 1s ease-in forwards;
-    animation: slide-menu 1s ease-in forwards;
+    -webkit-animation: slide-menu 0.5s ease-in forwards;
+    animation: slide-menu 0.5s ease-in forwards;
     z-index: 2;
 }
 
 .show-menu .close-button {
-    -webkit-animation: show-x 1s 1s forwards;
-    animation: show-x 1s 1s forwards;
+    -webkit-animation: show-x 0.5s 0.5s forwards;
+    animation: show-x 0.5s 0.5s forwards;
 }
 
 .show-menu li:nth-of-type(1) {
@@ -253,8 +259,8 @@ nav ul li {
 }
 
 .show-menu li:nth-of-type(3) {
-    -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-    animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+    -webkit-animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+    animation: menu-item-anim .6s forwards 1.4s ease-in-out;
 }
 
 .show-menu li:nth-of-type(4) {
@@ -334,24 +340,41 @@ input::-webkit-input-placeholder {
 
 
 @media only screen and (max-width: 600px) {
- .logo {
-    height: auto;
-    width: 100%;
-    padding-top: 10px;
+    .logo {
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
 
-}
+    }
+
     input[type=search] {
-	width: 30px;
-}
+        width: 30px;
+    }
+
     input[type=search] {
-	font-size: 55%;
-}
+        font-size: 55%;
+    }
+
+    .hero-text {
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        max-width: 400px;
+        color: #F2EFE9;
+    }
+
+    .event {
+        display: grid;
+        overflow: hidden;
+        margin: 0 10% 0 10%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
- form{
-   margin-left: 650px;
-}
+    form {
+        margin-left: 650px;
+    }
 }
 
 
@@ -430,16 +453,21 @@ input::-webkit-input-placeholder {
 
 footer {
     margin: 70px 50px;
+    opacity: 2px;
+}
+
+h3 {
+    border-top: 0.1px solid #f2efea;
+    margin: 20px 8% 20px 8%;
+    padding-top: 20px;
+    text-align: center;
     border-top: 0.2px solid #f2efea;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
-h3 {
-    padding-top: 15px;
-    font-family: Open Sans;
-}
+
 
 section{
    grid-column-start: 1;
@@ -465,7 +493,8 @@ a {
 .About {
     text-align: center;
 }
-.about-logo{
+
+.about-logo {
     width: 140px;
 }
 
@@ -477,6 +506,7 @@ a {
     width: 40%;
     display: inline-block;
 }
+
 .left_box1 {
     width: 40%;
     display: inline-block;
@@ -488,26 +518,23 @@ a {
     display: inline-block;
 
 }
+
 .right_box1 {
     width: 40%;
     display: inline-block;
-    margin-left:30px;
+    margin-left: 30px;
 }
-.title1{
+
+.title1 {
     padding-bottom: 20px;
 }
 
-.socialicon{
-    width:50px;
-    height:50px;
+.socialicon {
+    width: 50px;
+    height: 50px;
 }
 
-.overlay_link {
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-}
-.about_image{
+.about_image {
     padding-bottom: 80px;
 }
 .container {
