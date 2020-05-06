@@ -372,11 +372,9 @@ input::-webkit-input-placeholder {
 }
 
 @media only screen and (min-width: 600px) {
-<<<<<<< HEAD
     form {
         margin-left: 650px;
     }
-=======
  form{
    margin-left: 650px;
 }
@@ -385,7 +383,6 @@ input::-webkit-input-placeholder {
     grid-template-columns: 1fr 1fr;
 
 }
->>>>>>> newsletter
 }
 
 
@@ -465,6 +462,7 @@ input::-webkit-input-placeholder {
 footer {
     margin: 70px 50px;
     opacity: 2px;
+    border-top: 0.5px solid #f2efea;
 }
 
 h3 {
@@ -474,6 +472,9 @@ h3 {
     text-align: center;
     border-top: 0.2px solid #f2efea;
 
+}
+.header{
+    border-top: none;
 }
 
 
