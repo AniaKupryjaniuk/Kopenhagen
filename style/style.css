@@ -461,13 +461,24 @@ h3 {
     margin: 20px 8% 20px 8%;
     padding-top: 20px;
     text-align: center;
-    font-family: Open Sans;
+    border-top: 0.2px solid #f2efea;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
-.links {
+
+
+section{
+   grid-column-start: 1;
+    padding: 0px;
     text-align: center;
+}
+.links {
+
     word-spacing: 30px;
     padding-top: 15px;
+
 
 }
 
@@ -525,4 +536,38 @@ a {
 
 .about_image {
     padding-bottom: 80px;
+}
+.container {
+  padding: 20px;
+   ;
+}
+
+input[type=text]  {
+  width: 50%;
+  padding: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input[type=submit]{
+width: 30%;
+padding: 13px;
+
+}
+
+input[type=submit] {
+  background-color: #6d9c99;
+  color: #f2efea;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.form {
+   grid-column-start: 2;
+    grid-row-start: 1;
+    margin: 0px;
+    text-align: center;
+
 }
