@@ -352,6 +352,11 @@ input::-webkit-input-placeholder {
  form{
    margin-left: 650px;
 }
+    footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 }
 
 
@@ -431,8 +436,6 @@ input::-webkit-input-placeholder {
 footer {
     margin: 70px 50px;
     border-top: 0.2px solid #f2efea;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
 }
 
