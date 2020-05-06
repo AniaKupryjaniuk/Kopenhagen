@@ -96,12 +96,12 @@ body {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2em;
 }
 
 .selection-container {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 1vh;
 }
 
 .dropbtn {
@@ -217,7 +217,7 @@ nav ul {
 }
 
 nav ul a {
-    color: grey;
+    color: #323F49;
     font-weight: lighter;
     display: block;
     font-size: 1.4em;
@@ -226,7 +226,7 @@ nav ul a {
 }
 
 nav ul h2 {
-    color: gray;
+    color: #323F49;
     margin: 0 0 10% 0;
     display: block;
     font-size: 2em;
@@ -238,14 +238,14 @@ nav ul li {
 
 .show-menu {
     display: block;
-    -webkit-animation: slide-menu 1s ease-in forwards;
-    animation: slide-menu 1s ease-in forwards;
+    -webkit-animation: slide-menu 0.5s ease-in forwards;
+    animation: slide-menu 0.5s ease-in forwards;
     z-index: 2;
 }
 
 .show-menu .close-button {
-    -webkit-animation: show-x 1s 1s forwards;
-    animation: show-x 1s 1s forwards;
+    -webkit-animation: show-x 0.5s 0.5s forwards;
+    animation: show-x 0.5s 0.5s forwards;
 }
 
 .show-menu li:nth-of-type(1) {
@@ -259,8 +259,8 @@ nav ul li {
 }
 
 .show-menu li:nth-of-type(3) {
-    -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-    animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+    -webkit-animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+    animation: menu-item-anim .6s forwards 1.4s ease-in-out;
 }
 
 .show-menu li:nth-of-type(4) {
