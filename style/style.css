@@ -452,8 +452,10 @@ input::-webkit-input-placeholder {
 }
 
 footer {
+/*
     margin: 70px 50px;
     opacity: 2px;
+*/
 }
 
 h3 {
